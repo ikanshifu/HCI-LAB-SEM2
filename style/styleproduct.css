@@ -1,0 +1,158 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #F5F5DC;
+    color: #004225;
+    text-align: center;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #F5F5DC;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+nav{
+    height: 80px;
+    background-color: #F5F5DC;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #004225;
+    padding: 23px;
+}
+
+nav a:hover{
+    color: #FFB000;
+}
+
+.logo{
+    color: #004225;
+    font-size: 42px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/* Content */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container_title{
+    justify-content: center;
+    object-position: center;
+}
+
+.container_title h1{
+    font-size: 64px;
+    color: #004225;
+}
+
+.container_title p{
+    font-size: 22px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    border: 2px solid #004225;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .title {
+    background-color: #004225;
+    color: #F5F5DC;
+    font-size: 18px;
+    padding: 5px 0;
+    position: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.button_group {
+    display: flex;
+    object-position: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.button_group button {
+    background-color: #F5F5DC;
+    color: #004225;
+    padding: 10px 20px;
+    border: 2px solid #004225;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #F5F5DC;
+    color: #004225;
+    padding: 10px 20px;
+    border: 2px solid #004225;
+    margin: 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button_group button.active {
+    background-color: #004225;
+    color: #F5F5DC;
+}
+
+.button:hover{
+    background:#004225;
+    color: #F5F5DC;
+    border: 2px solid #004225;
+}
+
+/* Footer */
+footer{
+    background-color: #004225;
+    color: #F5F5DC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright{
+    font-size: large;
+    padding: 15px;
+}
+
+.contact_info{
+    padding: 15px;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px){
+    .banner_container{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="style/stylecontact.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+       <div class="logo">VKellogg’s's</div>
+       <nav>
+           <div class = "nav_items">  
+               <a href="index.html"class="nav_link">Home</a>            
+               <a href="products.html"class="nav_link">Products</a>          
+               <a href="recipes.html"class="nav_link">Recipes</a>
+               <a href="about_us.html"class="nav_link">About Us</a>
+               <a href="contact_us.html"class="nav_link">Contact Us</a>
+           </div>
+       </nav>
+   </header>
+    <section class="content">
+        <div class = "form_title">
+            <h1>Have Questions?</h1>
+            <p>Please fill the form below for any inquiries</p>
+        </div>
+        <form action="" id="contact-form"class=forms>
+                <div>
+                    <input type="text" name="first_name" id="first_name" placeholder="First Name" class="text_input"required>
+                </div>
+                <div>
+                    <input type="text" name="last_name" id="last_name" placeholder="Last Name"class="text_input"required>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email Address"class="text_input"required>
+                </div>
+                <div>
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number" class="text_input" required>
+                </div>
+                <div>
+                <textarea id="message" placeholder="Message" class="text_input" required></textarea>
+                </div>
+                <div class="button_group">
+                    <button type="submit" onclick="return validate()"class="button">Send Message</button>
+                </div>
+        </form>
+    </section>
+    <script defer src="script.js"></script>
+</body>
+
+<footer>
+    <div class="contact_info">
+        <h1>Contact Us</h1>
+        <p>📩 vkelloggcompany@gmail.com</p>
+        <p>☎ 310 8229 9210</p>
+    </div>
+    <div class="copyright">
+        <p>© 1906-2024 VKellogg’s. All Rights Reserved.</p>
+    </div>
+</footer>
+</html>
+
